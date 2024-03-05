@@ -36,7 +36,7 @@ def main():
     try:
         assert len(sys.argv) <= 2, "more than one argument is provided"
     except AssertionError as error:
-        print("AssertionError: " + str(error))
+        print("AssertionError:", str(error))
 
     line = ""
     if len(sys.argv) == 1:

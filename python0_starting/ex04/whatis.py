@@ -18,4 +18,4 @@ try:
 	except ValueError:
 		assert False, "argument is not an integer"
 except AssertionError as error:
-	print("AssertionError: " + str(error))
+	print("AssertionError:", str(error))
