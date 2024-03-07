@@ -11,6 +11,7 @@ def showTextCharDetails(text: str):
             - How many spaces
             - How many digits
     """
+
     strPonctuactions = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 
     print("The text contains", str(len(text)), "characters:")
