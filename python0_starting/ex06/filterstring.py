@@ -3,6 +3,13 @@ from ft_filter import ft_filter
 
 
 def main():
+    """Errors managment:
+    - Arguments not equals to 2
+    - Second argument isn't an integer
+    - First argument contains special chars
+
+Call ft_filter function with lambda function as function to send
+in parameters, it'll check the len of each words of the list"""
     try:
         assert len(sys.argv) == 3, "the arguments are bad"
         try:
