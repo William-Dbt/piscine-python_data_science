@@ -10,7 +10,7 @@ def formatTime(time: float) -> str:
     return f"{int(minuts):02d}:{int(seconds):02d}"
 
 
-def ft_tqdm(lst: range) -> None: # type: ignore
+def ft_tqdm(lst: range) -> None:  # type: ignore
     """
     Print a loading bar from range statement with progress time, eta and speed
     """
