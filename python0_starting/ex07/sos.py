@@ -43,8 +43,10 @@ NESTED_MORSE = {
 
 
 def encodeStrToMorse(string: str):
-    """Make a translationTable from previous declared dict
-and use it to translate our string in Morse Code"""
+    """
+    Make a translationTable from previous declared dict
+    and use it to translate our string in Morse Code
+    """
 
     string = string.upper()
     translationTable = str.maketrans(NESTED_MORSE)
@@ -52,8 +54,10 @@ and use it to translate our string in Morse Code"""
 
 
 def main():
-    """Check for errors as number of arguments and string format
-then call encoreStrToMorse function to translate the given string"""
+    """
+    Check for errors as number of arguments and string format
+    then call encoreStrToMorse function to translate the given string
+    """
 
     try:
         assert len(sys.argv) == 2, "only one string is expected"
