@@ -11,7 +11,6 @@ def showTextCharDetails(text: str):
             - How many spaces
             - How many digits
     """
-
     strPonctuactions = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 
     print("The text contains", str(len(text)), "characters:")
@@ -38,6 +37,7 @@ def main():
         assert len(sys.argv) <= 2, "more than one argument is provided"
     except AssertionError as error:
         print("AssertionError:", str(error))
+        exit()
 
     line = ""
     if len(sys.argv) == 1:
