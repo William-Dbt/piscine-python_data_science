@@ -20,6 +20,8 @@ There are 5 modules with several exercices per modules and each module highlight
   - ex09: Creation of personnal package  
 
 ***Module 01***: Discovery of arrays, their manipulations, and work on images.  
+  - ex00: First manipulation of arrays with numpy  
+
 ***Module 02***: Load, manipulate and display datatable.  
 ***Module 03***: Classes and the heritage in Python.  
 ***Module 04***: Structure Design.
