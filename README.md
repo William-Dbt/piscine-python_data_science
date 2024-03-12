@@ -21,6 +21,7 @@ There are 5 modules with several exercices per modules and each module highlight
 
 ***Module 01***: Discovery of arrays, their manipulations, and work on images.  
   - ex00: First manipulation of arrays with numpy  
+  - ex01: Discover of the slice method in 2D array  
 
 ***Module 02***: Load, manipulate and display datatable.  
 ***Module 03***: Classes and the heritage in Python.  
