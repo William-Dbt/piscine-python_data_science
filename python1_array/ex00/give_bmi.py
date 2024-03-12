@@ -17,7 +17,7 @@ def give_bmi(height: list[int | float],
         try:
             infos = np.array([weight, height])
         except ValueError:
-            assert False, "lists must have the same size"
+            assert False, "arguments must be a list and have the same size"
 
         assert infos.dtype == 'float64', \
             "lists must contain only int and float elements"
