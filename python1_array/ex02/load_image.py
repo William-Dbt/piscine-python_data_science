@@ -26,11 +26,8 @@ def ft_load(path: str) -> np.array:
         print("AssertionError:", error)
         exit()
 
-    # Get the size of the image to reshape our array later
-    width, height = image.size
-
     # Get all datas from the images (RGB pixels infos) into an array
     # Then reshape the array to get a new shape asked by the subject
-    arrImage = np.array(image.getdata()).reshape((height, width, 3))
+    arrImage = np.array(image)
     print("The shape of image is:", np.shape(arrImage))
     return arrImage
