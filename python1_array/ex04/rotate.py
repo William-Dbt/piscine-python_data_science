@@ -3,6 +3,7 @@ from load_image import ft_load
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 def transpose(arrImage: np.array) -> np.array:
     """Rotate a square image on the left
 

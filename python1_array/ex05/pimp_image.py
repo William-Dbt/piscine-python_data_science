@@ -14,12 +14,12 @@ def ft_invert(array: np.array) -> np.array:
     # This will add 255 - the value of each colors in each dimensions (RGB)
     array[:, :, :3] = 255 - array[:, :, :3]
 
-
     plt.imshow(array)
     plt.title("Inverted")
     plt.axis('off')
     plt.show()
     return array
+
 
 def ft_red(array: np.array) -> np.array:
     """Turn red the colors of the image received
@@ -30,7 +30,7 @@ def ft_red(array: np.array) -> np.array:
     Returns:
         np.array: modified image array
     """
-    # This mask will turn to 0 G and B values in all dimensions 
+    # This mask will turn to 0 G and B values in all dimensions
     # Multiply the array by 0 will turn G and B values to 0,
     # Red is not touched because it's multiplied by 1
     redMask = np.array([1, 0, 0])
@@ -41,6 +41,7 @@ def ft_red(array: np.array) -> np.array:
     plt.axis('off')
     plt.show()
     return array
+
 
 def ft_green(array: np.array) -> np.array:
     """Turn green the colors of the image received
