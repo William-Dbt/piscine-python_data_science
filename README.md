@@ -25,6 +25,7 @@ There are 5 modules with several exercices per modules and each module highlight
   - ex02: Discover the exploitation of images (load and work on pixels in array)  
   - ex03: Zoom and display image by using slicing method and pyplot module  
   - ex04: Rotate image by using transpose method by manipulate 2D array  
+  - ex05: Playing with masks on images under certain conditions  
 
 ***Module 02***: Load, manipulate and display datatable.  
 ***Module 03***: Classes and the heritage in Python.  
