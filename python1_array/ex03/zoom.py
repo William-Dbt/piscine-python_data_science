@@ -16,9 +16,6 @@ def zoom(arrImage: np.array) -> np.array:
     # Slice the array of the image by using Y and X axis
     arrZoomedImage = arrImage[100:500, 450:850, 0:1]
     print("New shape after slicing:", np.shape(arrZoomedImage))
-
-    plt.imshow(arrZoomedImage, cmap="grey")
-    plt.show()
     return arrZoomedImage
 
 
@@ -28,7 +25,11 @@ def main():
     """
     arrImage = ft_load("animal.jpeg")
     print(arrImage)
-    print(zoom(arrImage))
+    arrZoomedImage = zoom(arrImage)
+    print(arrZoomedImage)
+
+    plt.imshow(arrZoomedImage, cmap="grey")
+    plt.show()
 
 
 if __name__ == "__main__":
