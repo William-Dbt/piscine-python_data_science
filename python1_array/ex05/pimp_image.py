@@ -12,13 +12,14 @@ def ft_invert(array: np.array) -> np.array:
         np.array: modified image array
     """
     # This will add 255 - the value of each colors in each dimensions (RGB)
-    array[:, :, :3] = 255 - array[:, :, :3]
+    invertedArray = np.copy(array)
+    invertedArray[:, :, :3] = 255 - invertedArray[:, :, :3]
 
-    plt.imshow(array)
+    plt.imshow(invertedArray)
     plt.title("Inverted")
     plt.axis('off')
     plt.show()
-    return array
+    return invertedArray
 
 
 def ft_red(array: np.array) -> np.array:
@@ -34,13 +35,14 @@ def ft_red(array: np.array) -> np.array:
     # Multiply the array by 0 will turn G and B values to 0,
     # Red is not touched because it's multiplied by 1
     redMask = np.array([1, 0, 0])
-    array = array * redMask
+    redArray = np.copy(array)
+    redArray = redArray * redMask
 
-    plt.imshow(array)
+    plt.imshow(redArray)
     plt.title("Red")
     plt.axis('off')
     plt.show()
-    return array
+    return redArray
 
 
 def ft_green(array: np.array) -> np.array:
@@ -112,3 +114,13 @@ def ft_grey(array: np.array) -> np.array:
     plt.axis('off')
     plt.show()
     return greyImage
+
+from load_image import ft_load
+
+array = ft_load("landscape.jpg")
+ft_invert(array)
+ft_red(array)
+ft_green(array)
+ft_blue(array)
+ft_grey(array)
+print(ft_invert.__doc__)
