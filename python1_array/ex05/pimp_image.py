@@ -114,13 +114,3 @@ def ft_grey(array: np.array) -> np.array:
     plt.axis('off')
     plt.show()
     return greyImage
-
-from load_image import ft_load
-
-array = ft_load("landscape.jpg")
-ft_invert(array)
-ft_red(array)
-ft_green(array)
-ft_blue(array)
-ft_grey(array)
-print(ft_invert.__doc__)
