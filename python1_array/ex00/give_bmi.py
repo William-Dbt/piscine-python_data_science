@@ -25,14 +25,14 @@ def give_bmi(height: list[int | float],
         for item in np.nditer(infos):
             assert item > 0, "numbers in lists must be greater than 0"
 
+        bmiList = []
+        it = np.nditer(infos[0], flags=['f_index'])
+        for item in it:
+            bmiList.append(item / (infos[1][it.index] ** 2))
+
     except AssertionError as error:
         print("AssertionError:", error)
         exit()
-
-    bmiList = []
-    it = np.nditer(infos[0], flags=['f_index'])
-    for item in it:
-        bmiList.append(item / (infos[1][it.index] ** 2))
 
     return bmiList
 
@@ -49,11 +49,19 @@ def apply_limit(bmi: list[int | float], limit: int) -> list[bool]:
             iterate in bmi that is greater than limit
     """
     try:
-        arrBmi = np.array([bmi])
+        try:
+            arrBmi = np.array([bmi])
+        except ValueError:
+            assert False, "arguments must be a list"
+
+        assert arrBmi.dtype == 'float64', \
+            "lists must contain only int and float elements"
+
         assert arrBmi.dtype == 'float64', \
             "lists must contain only int and float elements"
     except AssertionError as error:
-        print("AssertionError", error)
+        print("AssertionError:", error)
+        exit()
 
     limitList = []
     for item in np.nditer(arrBmi):
