@@ -13,22 +13,26 @@ def transpose(arrImage: np.array) -> np.array:
     Returns:
         np.array: array of the rotated image
     """
-    # To transpose we have to take a 2D Array, let's remove the third dimension
-    arrImage = arrImage[:, :, 0]
-    arrTransposed = np.copy(arrImage)
+    try:
+        # To transpose we have to take a 2D Array, let's remove the third dimension
+        arrImage = arrImage[:, :, 0]
+        arrTransposed = np.copy(arrImage)
 
-    # Here we'll use indexes of our dimensions to move each elements on
-    # the position that we want
-    # The first one at the top left of the image will go at the bottom left ...
-    width = 0
-    height = 0
-    for x in arrImage:
-        for y in x:
-            arrTransposed[height][width] = y
-            height += 1
-
+        # Here we'll use indexes of our dimensions to move each elements on
+        # the position that we want
+        # The first one at the top left of the image will go at the bottom left ...
+        width = 0
         height = 0
-        width += 1
+        for x in arrImage:
+            for y in x:
+                arrTransposed[height][width] = y
+                height += 1
+
+            height = 0
+            width += 1
+    except TypeError as typeError:
+        print("TypeError:", typeError)
+        exit()
 
     return arrTransposed
 
