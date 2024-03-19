@@ -16,12 +16,14 @@ def ft_load(path: str) -> np.array:
     try:
         try:
             image = Image.open(path, 'r')
-        except FileNotFoundError:
-            assert False, "image not found"
-        except IsADirectoryError:
-            assert False, "is it really a dir?"
-        except Image.UnidentifiedImageError:
-            assert False, "an error occured while opening the image"
+        except FileNotFoundError as fileNotFoundError:
+            assert False, fileNotFoundError
+        except IsADirectoryError as dirError:
+            assert False, dirError
+        except Image.UnidentifiedImageError as unidentifiedError:
+            assert False, unidentifiedError
+        except AttributeError as attributeError:
+            assert False, attributeError
 
         assert image.mode == 'RGB', "image must be coded in RGB"
     except AssertionError as error:
