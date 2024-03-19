@@ -19,7 +19,7 @@ There are 5 modules with several exercices per modules and each module highlight
   - ex08: Recode tqdm function and discover of the yield operator  
   - ex09: Creation of personnal package  
 
-***Module 01***: Discovery of arrays, their manipulations, and work on images.  
+***Module 01***: Discovery of arrays, their manipulations, and work on images. (Numpy usage)  
   - ex00: First manipulation of arrays with numpy  
   - ex01: Discover of the slice method in 2D array  
   - ex02: Discover the exploitation of images (load and work on pixels in array)  
