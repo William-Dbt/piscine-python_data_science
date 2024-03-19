@@ -67,7 +67,8 @@ def ft_green(array: np.array) -> np.array:
     try:
         # Here we'll extract green only from the original array by creating
         # an empty array filled of 0
-        # and get the green dimension of the original array to overwrite the 0 ones
+        # and get the green dimension of the original array
+        # to overwrite the 0 ones
         greenArray = np.zeros_like(array)
         greenArray[:, :, 1] = array[:, :, 1]
     except (IndexError, TypeError) as error:
@@ -94,7 +95,8 @@ def ft_blue(array: np.array) -> np.array:
     try:
         # Here we'll extract blue only from the original array by creating
         # an empty array filled of 0
-        # and get the blue dimension of the original array to overwrite the 0 ones
+        # and get the blue dimension of the original array
+        # to overwrite the 0 ones
         blueArray = np.zeros_like(array)
         blueArray[:, :, 2] = array[:, :, 2]
     except (IndexError, TypeError) as error:
