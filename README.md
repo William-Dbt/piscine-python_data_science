@@ -19,14 +19,15 @@ There are 5 modules with several exercices per modules and each module highlight
   - ex08: Recode tqdm function and discover of the yield operator  
   - ex09: Creation of personnal package  
 
-***Module 01***: Discovery of arrays, their manipulations, and work on images. (using Numpy module)  
-  - ex00: First manipulation of arrays with numpy  
+***Module 01***: Discovery of arrays, their manipulations, and work on images. (using Numpy library)  
+  - ex00: First manipulation of arrays with numpy library  
   - ex01: Discover of the slice method in 2D array  
   - ex02: Discover the exploitation of images (load and work on pixels in array)  
-  - ex03: Zoom and display image by using slicing method and pyplot module  
+  - ex03: Zoom and display image by using slicing method and pyplot library  
   - ex04: Rotate image by using transpose method by manipulate 2D array  
   - ex05: Playing with dimensions of array in images to play with colors  
 
-***Module 02***: Load, manipulate and display datatable.  
+***Module 02***: Load, manipulate and display datatable. (using Pandas library)  
+  - ex00: First manipulation of DataTable with pandas library by reading csv file  
 ***Module 03***: Classes and the heritage in Python.  
 ***Module 04***: Structure Design.
