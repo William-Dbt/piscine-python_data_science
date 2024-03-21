@@ -2,6 +2,14 @@ import pandas as pnd
 
 
 def load(path: str) -> pnd.DataFrame:
+    """Generate a pandas array from datas of csv file
+
+    Args:
+        path (str): csv file to read
+
+    Returns:
+        pnd.DataFrame: DataFrame of csv file
+    """
     try:
         dataTable = pnd.read_csv(path)
     except FileNotFoundError as error:
