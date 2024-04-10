@@ -7,6 +7,9 @@ def popStringToFloat(popStr: str):
 
 
 def main():
+    """Display country information of France and Belgium
+    from population_total.csv file
+    """
     dataFrame = load("../population_total.csv")
 
     franceData = dataFrame.loc[dataFrame.country == 'France']
@@ -22,18 +25,20 @@ def main():
     belgiumDatas = [popStringToFloat(pop) for pop in belgiumDatas]
 
     plt.title("Population Projections")
-    plt.plot(tableYears, franceDatas, label="France", color="green")
     plt.plot(tableYears, belgiumDatas, label="Belgium", color="skyblue")
+    plt.plot(tableYears, franceDatas, label="France", color="green")
 
     plt.xlabel("Year")
-    plt.xticks(range(1800, 2051, 40), range(1800, 2051, 40))
-    plt.xlim(1800, 2040)
+    plt.xticks(range(1800, 2050, 40))
+    plt.xlim(1800, 2050)
 
     plt.ylabel("Population")
-    # plt.yticks([20, 40, 60])
-    # TODO: Work on y label
+    # Define values to take care of and how values have to be printed
+    yTicks = [20.0 * 1e6, 40.0 * 1e6, 60.0 * 1e6]
+    plt.yticks(yTicks,
+               ["{:,.0f}M".format(popNumber / 1e6) for popNumber in yTicks])
 
-    plt.legend()
+    plt.legend(loc="lower right")
     plt.show()
 
 
