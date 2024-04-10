@@ -3,9 +3,12 @@ from load_csv import load
 
 
 def main():
+    """
+        Show France datas
+    """
     dataFrame = load("../life_expectancy_years.csv")
 
-	# Get values from dataFrame where country is 'France'
+    # Get values from dataFrame where country is 'France'
     franceData = dataFrame.loc[dataFrame.country == 'France']
 
     # Retrieve all columns values that is the years except de first one
