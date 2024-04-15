@@ -2,7 +2,16 @@ import matplotlib.pyplot as plt
 from load_csv import load
 
 
-def popStringToFloat(popStr: str):
+def popStringToFloat(popStr: str) -> float:
+    """This function will take the args from the dataset expressed as 'X M'
+    Where X is a number and M is the letter for Million
+
+    Args:
+        popStr (str): Arg to convert
+
+    Returns:
+        float: float of the convertion
+    """
     return float(popStr.replace('M', '')) * 1e6
 
 
