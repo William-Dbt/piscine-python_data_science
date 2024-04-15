@@ -29,5 +29,9 @@ There are 5 modules with several exercices per modules and each module highlight
 
 ***Module 02***: Load, manipulate and display datatable. (using Pandas library)  
   - ex00: First manipulation of DataTable with pandas library by reading csv file  
+  - ex01: First graph by using matplotlib using previous exercice function  
+  - ex02: More complicated, create two representation of country in the same graph and manipulate axis  
+  - ex03: Let's take datas from two files and make a relation in a graph  
+
 ***Module 03***: Classes and the heritage in Python.  
 ***Module 04***: Structure Design.
