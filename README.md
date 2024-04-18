@@ -34,4 +34,6 @@ There are 5 modules with several exercices per modules and each module highlight
   - ex03: Let's take datas from two files and make a relation in a graph  
 
 ***Module 03***: Classes and the heritage in Python.  
+  - ex00: Discover of python classes and abstract ones  
+
 ***Module 04***: Structure Design.
