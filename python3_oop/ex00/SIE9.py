@@ -5,8 +5,7 @@ class Character(ABC):
     """Abstract class Character
 
     Methods:
-        is_alive(self) -> bool
-        die(self)
+        die(self): Makes character die
     """
     def __init__(self, name, isAlive=True):
         """Character class constructor
