@@ -9,7 +9,7 @@ class Character(ABC):
         die(self)
     """
     def __init__(self, name, isAlive=True):
-        """Class constructor
+        """Character class constructor
 
         Args:
             name (_type_): name of the character
@@ -18,15 +18,6 @@ class Character(ABC):
         """
         self.first_name = name
         self.is_alive = isAlive
-
-    @abstractmethod
-    def is_alive(self) -> bool:
-        """Check either character is alive or not
-
-        Returns:
-            bool: True for alive, False otherwise
-        """
-        pass
 
     @abstractmethod
     def die(self):
@@ -41,14 +32,6 @@ class Stark(Character):
     Args:
         Character (_type_): abstract class to use for methods is_alive and die
     """
-    def is_alive(self) -> bool:
-        """Check if character is alive or not
-
-        Returns:
-            bool: _description_
-        """
-        return (True if self.is_alive else False)
-
     def die(self):
         """Method to kill Stark character
         """
