@@ -35,5 +35,6 @@ There are 5 modules with several exercices per modules and each module highlight
 
 ***Module 03***: Classes and the heritage in Python.  
   - ex00: Discover of python classes and abstract ones  
+  - ex01: Discover of classmethod and \_\_str\_\_ and \_\_repr\_\_ specials methods with heritage  
 
 ***Module 04***: Structure Design.
