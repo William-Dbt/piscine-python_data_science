@@ -38,5 +38,6 @@ There are 5 modules with several exercices per modules and each module highlight
   - ex01: Discover of classmethod and \_\_str\_\_ and \_\_repr\_\_ specials methods with heritage  
   - ex02: Discover of multiple heritage in classes  
   - ex03: Discover of surcharge operators +, -, *, /  
+  - ex04: Discover of static method in classes  
 
 ***Module 04***: Structure Design.
