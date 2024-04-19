@@ -1,4 +1,4 @@
-from SIE9 import Character
+from S1E9 import Character
 
 
 class Baratheon(Character):
