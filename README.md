@@ -40,4 +40,5 @@ There are 5 modules with several exercices per modules and each module highlight
   - ex03: Discover of surcharge operators +, -, *, /  
   - ex04: Discover of static method in classes  
 
-***Module 04***: Structure Design.
+***Module 04***: Structure Design.  
+  - ex00: Work with statistics and make custom class instead of using match-case statement (flake8 and version requirements)  
