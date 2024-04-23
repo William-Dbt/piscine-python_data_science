@@ -19,6 +19,7 @@ def outer(x: int | float, function) -> object:
         object: return the function inner() that calls 'function'
     """
     error = ""
+
     def errorFunc() -> str:
         nonlocal error
 
@@ -57,14 +58,3 @@ def outer(x: int | float, function) -> object:
         return count
 
     return inner
-
-
-my_counter = outer(3, square)
-print(my_counter())
-print(my_counter())
-print(my_counter())
-print("---")
-another_counter = outer(1.5, pow)
-print(another_counter())
-print(another_counter())
-print(another_counter())
