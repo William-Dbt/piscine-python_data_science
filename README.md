@@ -44,3 +44,4 @@ There are 5 modules with several exercices per modules and each module highlight
   - ex00: Work with statistics and make custom class instead of using match-case statement (flake8 and version requirements)  
   - ex01: Discover of nonlocal variables and nested functions  
   - ex02: Working with wrappers  
+  - ex03: Discover of dataclasses  
